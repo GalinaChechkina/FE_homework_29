@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import TaskManager from "./components/TaskManager";
 
 function App() {
+
+  //Вам необходимо реализовать приложение учета задач. В приложении должен
+  //быть компонент TaskManager, который отображает список задач и их статус 
+  //(выполнено или не выполнено). В каждой задаче есть кнопка, 
+  //позволяющая изменить ее статус. Вам нужно создать дочерний компонент Task, 
+  //который будет отвечать за отображение отдельной задачи и принимать функцию 
+  //для изменения статуса из родительского компонента. 
+  //Помимо изменения статуса должна быть возможность удалить задачу по ее названию.
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h2>Task manager</h2>
+      <TaskManager/>
     </div>
   );
 }
